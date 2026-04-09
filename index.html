@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>Wortsuche</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h2 id="theme"></h2>
+
+<button id="openLevels">Levelübersicht</button>
+
+<p id="progress"></p>
+
+<div id="game">
+  <svg id="lines"></svg>
+  <div id="grid"></div>
+</div>
+
+<!-- Spangram Banner -->
+<div id="spangramBanner">SPANGRAM!</div>
+
+<button id="hintBtn">Hint</button>
+
+<div id="levelComplete" style="display:none;">
+  <h2>Level geschafft! 🎉</h2>
+  <button id="nextLevelBtn">Nächstes Level</button>
+</div>
+
+<div id="levelScreen" class="hidden">
+  <h2>Level auswählen</h2>
+  <div id="levelGrid"></div>
+  <button id="closeLevels">Zurück</button>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html> 

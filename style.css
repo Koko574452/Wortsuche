@@ -9,6 +9,8 @@ body {
   min-height: 100vh;
   box-sizing: border-box;
 
+  overflow: hidden; 
+
   padding-left: max(12px, env(safe-area-inset-left));
   padding-right: max(12px, env(safe-area-inset-right));
   padding-bottom: max(12px, env(safe-area-inset-bottom));
@@ -19,10 +21,11 @@ html, body {
 }
 
 #game {
-  width: 100%;
-  max-width: min(90vw, 500px); /* 🔥 passt sich an */
+  flex: 1;               /* 🔥 nimmt restlichen Platz */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-  margin: 0 auto;
   position: relative;
 }
 
@@ -74,12 +77,11 @@ html, body {
 }
 
 button {
-  width: 100%;
-  max-width: min(90vw, 500px);
+  flex-shrink: 0;
 
-  padding: 14px;
-  font-size: 18px;
-  margin-top: 10px;
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
 }
 
 #progress {
@@ -207,4 +209,7 @@ h2 {
   font-size: 16px;
 }
 
+h2, #progress, #openLevels {
+  flex-shrink: 0;
+}
 

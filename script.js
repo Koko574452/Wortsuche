@@ -314,7 +314,7 @@ function nextLevel() {
 
 function getCellCenter(cell) {
   const rect = cell.getBoundingClientRect();
-  const parent = document.getElementById("game").getBoundingClientRect();
+  const parent = gridEl.getBoundingClientRect();
 
   return {
     x: rect.left - parent.left + rect.width / 2,

@@ -20,7 +20,7 @@ const puzzles = [
   },
 
   {
-    theme: "Level 2",
+    theme: "Level 2: Liegt in der Familie",
     grid: [
       ["A","E","T","S","S","G"],
       ["M","R","A","V","O","R"],
@@ -33,7 +33,21 @@ const puzzles = [
     ],
     words: ["MUTTER","SCHWESTER","SOHN","UROMA","GROSSVATER"],
     spangram: "VERWANDTSCHAFT"
-  }
+  },
+
+{
+    theme: "Level 3: Eine runde Sache",
+    grid: [
+      ["G","L","O","D","N","M","L","E"],
+      ["U","B","D","N","U","O","U","M"],
+      ["S","E","T","S","M","E","N","R"],
+      ["E","N","R","U","F","N","O","S"],
+      ["G","U","S","S","B","A","R","B"],
+      ["E","L","K","L","L","E","E","S"],
+    ],
+    words: ["GLOBUS","ERBSE","MURMEL","KUGEL","FUSSBALL"],
+    spangram: "SONNEMONDUNDSTERNE"
+  }  
 ];
 
 /* ========================

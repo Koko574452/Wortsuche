@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  padding: 12px;
+  padding: 8px;
 
   display: flex;
   flex-direction: column;
@@ -21,17 +21,15 @@ html, body {
 }
 
 #game {
-  flex: 1;               /* 🔥 nimmt restlichen Platz */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
+  width: 100%;
+  max-width: 360px;   /* 🔥 vorher ~500 → jetzt kleiner */
+  margin: 0 auto;
   position: relative;
 }
 
 #grid {
   display: grid;
-  gap: 4px;
+  gap: 3px;
   width: 100%;
   position: relative;
   z-index: 2;
@@ -41,12 +39,7 @@ html, body {
   aspect-ratio: 1 / 1;
   width: 100%;
 
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  font-size: clamp(14px, 4vw, 24px);
-  border-radius: 8px;
+  font-size: clamp(12px, 3.5vw, 20px); /* etwas kleiner */
 }
 
 .cell.active {
@@ -77,11 +70,9 @@ html, body {
 }
 
 button {
-  flex-shrink: 0;
-
-  width: 100%;
-  padding: 12px;
-  font-size: 16px;
+  padding: 10px;
+  font-size: 15px;
+  margin-top: 8px;
 }
 
 #progress {

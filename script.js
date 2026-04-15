@@ -27,9 +27,9 @@ const puzzles = [
       ["O","N","D","T","S","R"],
       ["R","A","O","H","C","E"],
       ["U","W","S","N","H","T"],
-      ["T","U","R","A","S","E"],
-      ["T","M","E","F","C","W"],
-      ["R","E","V","T","S","H"]
+      ["R","U","T","E","S","A"],
+      ["E","M","T","C","W","F"],
+      ["V","R","E","S","H","T"]
     ],
     words: ["MUTTER","SCHWESTER","SOHN","UROMA","GROSSVATER"],
     spangram: "VERWANDTSCHAFT"

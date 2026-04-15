@@ -155,23 +155,23 @@ function moveSelection(e) {
 /* TOUCH */
 
 function handleTouchStart(e) {
-  e.preventDefault();
-
   const touch = e.touches[0];
   const el = document.elementFromPoint(touch.clientX, touch.clientY);
 
   if (el && el.classList.contains("cell")) {
+    e.preventDefault(); // nur beim Start auf Grid
     startSelection({ target: el });
   }
 }
 
 function handleTouchMove(e) {
-  e.preventDefault();
-
   const touch = e.touches[0];
   const el = document.elementFromPoint(touch.clientX, touch.clientY);
 
-  if (el && el.classList.contains("cell")) {
+  // 👉 nur wenn wir wirklich im Spiel sind
+  if (isSelecting && el && el.classList.contains("cell")) {
+    e.preventDefault(); // nur dann blockieren!
+
     selectCell(el);
   }
 }

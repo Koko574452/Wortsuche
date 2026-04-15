@@ -197,6 +197,18 @@ closeLevelsBtn.addEventListener("pointerdown", () => {
 ======================== */
 
 function selectCell(cell) {
+  const index = selectedCells.indexOf(cell);
+  if (index !== -1) {
+    // alles nach diesem Punkt entfernen
+    selectedCells.slice(index + 1).forEach(c => c.classList.remove("active"));
+
+    selectedCells = selectedCells.slice(0, index + 1);
+    currentWord = selectedCells.map(c => c.textContent).join("");
+
+    drawLine(selectedCells);
+    return;
+  }
+
   cell.classList.remove("hint");
   if (selectedCells.includes(cell)) return;
 
